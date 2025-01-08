@@ -1,32 +1,69 @@
 <script>
-    // window.onscroll = function () {
-    //     scrollFunction();
-    // };
+    import { onMount } from "svelte";
+    import { base } from "$app/paths";
+    import { locale, locales } from "svelte-i18n";
 
-    // function scrollFunction() {
-    //     if (
-    //         document.body.scrollTop > 40 ||
-    //         document.documentElement.scrollTop > 40
-    //     ) {
-    //         document.getElementById("navbar").style.top = "0";
-    //     } else {
-    //         document.getElementById("navbar").style.top = "-50px";
-    //     }
-    // }
+    let { children } = $props();
+    locale.set("fr");
+
+    onMount(() => {
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 40 ||
+                document.documentElement.scrollTop > 40
+            ) {
+                document.getElementById("navbarSlide").style.top = "0";
+                // document.getElementById("navbar").style.display = "none";
+            } else {
+                document.getElementById("navbarSlide").style.top = "-50px";
+                // document.getElementById("navbar").style.display = "block";
+            }
+        }
+    });
 </script>
 
-<!-- <h2>Navbar</h2> -->
 <div id="navbar">
-    <a href="#home">Accueil</a>
-    <a href="#news">L'appartement</a>
-    <a href="#contact">Veysonnaz</a>
-    <a href="#contact">Galerie</a>
-    <a href="#contact">Disponibilités</a>
-    <a href="#contact">Contact - réservation</a>
+    <a href="{base}/">Accueil</a>
+    <a href="{base}/appartement">L'appartement</a>
+    <a href="{base}/veysonnaz">Veysonnaz</a>
+    <a href="{base}/galerie">Galerie</a>
+    <a href="{base}/dispo">Disponibilités</a>
+    <a href="{base}/contact">Contact - réservation</a>
+    $locales: {$locales}
+    $locale: {$locale}
+    <select bind:value={$locale}>
+        {#each $locales as locale}
+            <option value={locale}>{locale}</option>
+        {/each}
+    </select>
+</div>
+
+<div id="navbarSlide">
+    <a href="{base}/">Accueil</a>
+    <a href="{base}/appartement">L'appartement</a>
+    <a href="{base}/veysonnaz">Veysonnaz</a>
+    <a href="{base}/galerie">Galerie</a>
+    <a href="{base}/dispo">Disponibilités</a>
+    <a href="{base}/contact">Contact - réservation</a>
 </div>
 
 <style>
     #navbar {
+        width: 100%; /* Full width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar a {
+        padding: 15px;
+    }
+
+    #navbarSlide {
         background-color: #333; /* Black background color */
         position: fixed; /* Make it stick/fixed */
         top: -50px; /* Hide the navbar 50 px outside of the top view */
@@ -38,7 +75,7 @@
     }
 
     /* Style the navbar links */
-    #navbar a {
+    #navbarSlide a {
         float: left;
         display: block;
         color: white;
@@ -47,7 +84,7 @@
         text-decoration: none;
     }
 
-    #navbar a:hover {
+    #navbarSlide a:hover {
         background-color: #ddd;
         color: black;
     }
