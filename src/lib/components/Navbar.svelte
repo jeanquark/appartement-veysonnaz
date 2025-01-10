@@ -1,10 +1,13 @@
 <script>
     import { onMount } from "svelte";
     import { base } from "$app/paths";
-    import { locale, locales } from "svelte-i18n";
+    import { page } from "$app/stores";
+    // import { locale, locales } from "svelte-i18n";
+    import { t, locales, locale } from "$lib/translations";
 
     let { children } = $props();
-    locale.set("fr");
+    // locale.set("fr");
+    // $: ({ route } = $page.data);
 
     onMount(() => {
         window.onscroll = function () {
@@ -24,6 +27,12 @@
             }
         }
     });
+
+    const handleChange = ({ currentTarget }) => {
+        const { value } = currentTarget;
+
+        document.cookie = `lang=${value} ;`;
+    };
 </script>
 
 <div id="navbar">
@@ -33,13 +42,34 @@
     <a href="{base}/galerie">Galerie</a>
     <a href="{base}/dispo">Disponibilités</a>
     <a href="{base}/contact">Contact - réservation</a>
-    $locales: {$locales}
+    <a href="/{$locale}/about">About</a>
+    $locale: {$locale}<br />
+    <select bind:value={$locale} onchange={handleChange}>
+        {#each $locales as value}
+            <option {value}>{$t(`lang.${value}`)}</option>
+        {/each}
+    </select>
+
+    <!-- $locales: {$locales}
     $locale: {$locale}
     <select bind:value={$locale}>
         {#each $locales as locale}
             <option value={locale}>{locale}</option>
         {/each}
-    </select>
+    </select> -->
+
+    <!-- <select
+        onchange={({ target }) => {
+            goto(`/${target.value}${route}`);
+            document.querySelector("html").setAttribute("lang", target.value);
+        }}
+    >
+        {#each $locales as lc}
+            <option value={lc} selected={lc === $locale}
+                >{$t(`lang.${lc}`)}</option
+            >
+        {/each}
+    </select> -->
 </div>
 
 <div id="navbarSlide">

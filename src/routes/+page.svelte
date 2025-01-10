@@ -1,5 +1,6 @@
 <script>
-    import { _ } from "svelte-i18n";
+    // import { _ } from "svelte-i18n";
+    import { t } from "$lib/translations";
 </script>
 
 <svelte:head>
@@ -27,8 +28,12 @@
 </div>
 
 <div class="row">
-    <div class="col-12 border-2">
-        <h2>{$_("homepage")}</h2>
+    <div
+        class="col-12 border-2"
+        style="background: #ccc; position: relative; width: 100%; overflow: hidden;"
+    >
+        <!-- <h2>{$_("homepage")}</h2> -->
+        <h2>{$t("common.homepage")}</h2>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
@@ -77,10 +82,10 @@
     @for $i from 1 through 50 {
         .snowflake:nth-child(#{$i}) {
             --size: #{math.random(5) * 0.2}vw;
-            // --left-ini: #{math.random(20) - 10}vw;
-            // --left-end: #{math.random(20) - 10}vw;
-            --left-ini: #{math.random(20) - 20}vw;
-            --left-end: #{math.random(20) - 20}vw;
+            --left-ini: #{math.random(20) - 10}vw;
+            --left-end: #{math.random(20) - 10}vw;
+            // --left-ini: #{math.random(20) - 20}vw;
+            // --left-end: #{math.random(20) - 20}vw;
             left: #{math.random(100)}vw;
             animation: snowfall #{5 + math.random(10)}s linear infinite;
             animation-delay: -#{math.random(10)}s;
