@@ -1,9 +1,9 @@
 import path from 'path';
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import lang from './src/lib/translations/lang.js';
+// import lang from './src/lib/translations/lang.js';
 
-const supportedLocales = Object.keys(lang);
+// const supportedLocales = Object.keys(lang);
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,10 +18,10 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		prerender: {
-			// NOTE: You can modify your exported error pages here.
-			entries: supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`], ['*']),
-		},
+		// prerender: {
+		// 	// NOTE: You can modify your exported error pages here.
+		// 	entries: supportedLocales.reduce((acc, locale) => [...acc, `/${locale}`, `/${locale}/401`, `/${locale}/403`, `/${locale}/404`, `/${locale}/500`], ['*']),
+		// },
 		paths: {
 			// base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 			base: ''

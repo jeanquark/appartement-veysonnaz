@@ -220,6 +220,11 @@
 
 /* xl */
 @media screen and (min-width: 1201px) {
+    .container {
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .col-xl-12 {
         flex-basis: 100%;
         max-width: 100%;
@@ -278,6 +283,11 @@
 
 /* lg */
 @media screen and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .col-lg-12 {
         flex-basis: 100%;
         max-width: 100%;
@@ -336,6 +346,11 @@
 
 /* md */
 @media screen and (max-width: 992px) {
+    .container {
+        max-width: 769px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .col-md-12 {
         flex-basis: 100%;
         max-width: 100%;
@@ -401,6 +416,11 @@
 
 /* sm */
 @media screen and (max-width: 768px) {
+    .container {
+        max-width: 576px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .col-sm-12 {
         flex-basis: 100%;
         max-width: 100%;
@@ -463,6 +483,11 @@
 
 /* xs */
 @media screen and (max-width: 576px) {
+    .container {
+        max-width: 576px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .col-xs-12 {
         flex-basis: 100%;
         max-width: 100%;

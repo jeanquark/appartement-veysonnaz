@@ -27,7 +27,7 @@
 
 // import { setLocale, setRoute } from '$lib/translations';
 
-// export const prerender = true;
+export const prerender = true;
 
 // /** @type { import('@sveltejs/kit').Load } */
 // export const load = async ({ url }) => {

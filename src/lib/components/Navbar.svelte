@@ -87,6 +87,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        /* position:relative; */
     }
 
     #navbar a {
@@ -102,6 +103,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1000;
+
     }
 
     /* Style the navbar links */

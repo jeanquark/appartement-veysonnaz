@@ -1,6 +1,7 @@
 {
-    "homepage": "Startseite",
-    "about": "Über uns",
+    "homepage": "Homepage",
+    "about": "About",
+    "contact_page": "Contact page",
     "page_title": "Page title",
     "sign_in": "Sign in",
     "sign_up": "Sign up"

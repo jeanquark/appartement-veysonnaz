@@ -1,6 +1,9 @@
 <script>
     // import { _ } from "svelte-i18n";
-    import { t } from "$lib/translations";
+    import { t } from '$lib/translations'
+    import Modal from '@components/Modal.svelte'
+
+    let showModal = $state(false)
 </script>
 
 <svelte:head>
@@ -9,31 +12,55 @@
 </svelte:head>
 
 <div class="row justify-center">
-    <div class="col-6 border-3" style="font-size: 1.3em;">
-        <h1 class="text-center">A louer à Veysonnaz</h1>
-        <p>
-            Très bel appartement à louer pour quatre ou cinq personnes. Il
-            comprend deux chambres à coucher avec chacune deux lits, une chambre
-            avec deux lits superposés, un salon/salle à manger et deux salles
-            d'eau. L'appartement est bien situé avec une orientation sud-ouest,
-            une très belle vue sur le village de Nendaz dans la vallée d'en face
-            et un ensoleillement optimal. Il y a deux grands balcons où il est
-            possible de se relaxer tranquillement et profiter du bon air de la
-            montagne. Un parking privé est aussi à disposition.
-        </p>
+    <div class="col-6 col-sm-12 border-3" style="font-size: 1.3em;">
+        <h1 class="text-center">{$t('home.title')}</h1>
+        <p style="text-align: justify;">{$t('home.description')}</p>
     </div>
-    <div class="col-6 border-4">
-        <img src="/images/domaine.jpg" width="100%" alt="domaine 4 vallées" />
+    <div class="col-6 col-sm-12 border-4">
+        <img src="/images/domaine.jpg" width="100%" alt="domaine 4 vallées" onclick={() => (showModal = true)} />
     </div>
 </div>
 
 <div class="row">
-    <div
-        class="col-12 border-2"
-        style="background: #ccc; position: relative; width: 100%; overflow: hidden;"
-    >
+    {#if showModal}
+        <Modal bind:showModal>
+            {#snippet header()}{/snippet}
+        </Modal>
+    {/if}
+</div>
+
+<div class="row">
+    <div class="col-6 col-sm-12 border-4 pa-2">
+        <div class="img-hover-zoom">
+            <img src="/images/salon.jpg" width="100%" alt="Salon" />
+        </div>
+    </div>
+    <div class="col-6 col-sm-12 border-4 pa-2">
+        <div class="img-hover-zoom">
+            <img src="/images/salle_a_manger.jpg" width="100%" alt="Salle à manger" />
+        </div>
+    </div>
+    <div class="col-6 col-sm-12 border-4 pa-2">
+        <div class="img-hover-zoom">
+            <img src="/images/cuisine.jpg" width="100%" alt="cuisine" />
+        </div>
+    </div>
+    <div class="col-6 col-sm-12 border-4 pa-2">
+        <div class="mg-hover-zoom">
+            <img src="/images/vue1.jpg" width="100%" alt="Vue 1" />
+        </div>
+    </div>
+    <div class="col-6 col-sm-12 border-4 pa-2">
+        <div class="img-hover-zoom">
+            <img src="/images/immeuble.jpg" width="100%" alt="Immeuble" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 border-2" style="background: #ccc; position: relative; width: 100%; overflow: hidden;">
         <!-- <h2>{$_("homepage")}</h2> -->
-        <h2>{$t("common.homepage")}</h2>
+        <h2>{$t('common.homepage')}</h2>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
@@ -58,7 +85,7 @@
 
 <style lang="scss">
     // https://freefrontend.com/css-snow-effects/
-    @use "sass:math";
+    @use 'sass:math';
     .snowflake {
         --size: 1vw;
         width: var(--size);
@@ -94,5 +121,16 @@
 
     .snowflake:nth-child(6n) {
         filter: blur(1px);
+    }
+
+    .img-hover-zoom {
+        // height: 300px; /* [1.1] Set it as per your need */
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+    .img-hover-zoom img {
+        transition: transform 0.5s ease;
+    }
+    .img-hover-zoom:hover img {
+        transform: scale(1.15);
     }
 </style>

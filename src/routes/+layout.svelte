@@ -1,19 +1,29 @@
 <script>
-    import Navbar from "@components/Navbar.svelte";
-    import Header from "@components/Header.svelte";
-    import Footer from "@components/Footer.svelte";
+    import Navbar from '@components/Navbar.svelte'
+    import Header from '@components/Header.svelte'
+    import Footer from '@components/Footer.svelte'
 
-    let { children } = $props();
+    let { children } = $props()
 </script>
 
 <div class="app">
     <Navbar />
     <Header />
     <main class="main">
-        {@render children()}
-        <Footer />
+        <div class="container border-5">
+            {@render children()}
+        </div>
     </main>
+    <Footer />
 </div>
 
 <style lang="scss">
+    .app {
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 </style>
