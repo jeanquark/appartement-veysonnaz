@@ -1,16 +1,17 @@
 <script>
     import { base } from "$app/paths";
     import { browser } from "$app/environment";
+    import { t } from "$lib/translations";
     import CloseIcon from "@components/icons/CloseIcon.svelte";
 
     let { showModal = $bindable(), header } = $props();
     let dialog = $state();
     let loaded = $state([0, 1]);
+    let isHovered = $state(false);
 
     $effect(() => {
         if (showModal) dialog.showModal();
     });
-
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events,
@@ -23,35 +24,42 @@ a11y_no_noninteractive_element_interactions -->
     onclose={() => (showModal = false)}
 >
     <div class="row">
-        {@render header?.()}
-        <hr />
-        <div class="col-12 text-center" style="">
-            <div class="relative">
-            <h2>
-                <button
-                    type="button"
-                    class="close-btn"
-                    onclick={() => dialog.close()}
-                    ><CloseIcon width="2em" color="#B2B2B2" /></button
-                >
-            </h2>
-            <br /><br />
-            </div>
+        <div class="col-12 text-center relative" style="margin-bottom: 10px;">
+            <button
+                type="button"
+                class="close-btn"
+                onmouseover={() => (isHovered = true)}
+                onmouseout={() => (isHovered = false)}
+                onfocus={() => {}}
+                onblur={() => {}}
+                onclick={() => dialog.close()}
+                ><CloseIcon
+                    width="2em"
+                    color={isHovered ? "#ccc" : "#B2B2B2"}
+                /></button
+            >
         </div>
+    </div>
+    <div class="row">
         <div class="col-12 border-2">
+            {@render header?.()}
             {#if browser}
-            <img src="/images/domaine.jpg" width="100%" alt="domaine 4 vallées" />
+                <img
+                    src="/images/domaine.jpg"
+                    width="100%"
+                    alt="Domaine des 4 Vallées"
+                />
             {/if}
         </div>
     </div>
-    
+
     <div class="row justify-center my-0" style="padding: .5em;">
         <!-- svelte-ignore a11y_autofocus -->
         <button
             type="button"
             autofocus
-            class="text-muted"
-            onclick={() => dialog.close()}>Close</button
+            class="btn"
+            onclick={() => dialog.close()}>{$t("common.close")}</button
         >
     </div>
 </dialog>
@@ -84,10 +92,15 @@ a11y_no_noninteractive_element_interactions -->
             opacity: 1;
         }
     }
-    button {
-        display: block;
-        background: transparent;
-        border: none;
+    .btn {
+        padding: 0.5em 1em;
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 0.5em;
+    }
+    .btn:hover {
+        cursor: pointer;
+        border: 1px solid #b7b7b7;
     }
     .close-btn {
         position: absolute;

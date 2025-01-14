@@ -1,9 +1,9 @@
 <script>
     // import { _ } from "svelte-i18n";
-    import { t } from '$lib/translations'
-    import Modal from '@components/Modal.svelte'
+    import { t } from "$lib/translations";
+    import Modal from "@components/Modal.svelte";
 
-    let showModal = $state(false)
+    let showModal = $state(false);
 </script>
 
 <svelte:head>
@@ -11,13 +11,24 @@
     <meta name="description" content="" />
 </svelte:head>
 
-<div class="row justify-center">
+<div class="row justify-center align-center">
     <div class="col-6 col-sm-12 border-3" style="font-size: 1.3em;">
-        <h1 class="text-center">{$t('home.title')}</h1>
-        <p style="text-align: justify;">{$t('home.description')}</p>
+        <h2 class="text-center">{$t("home.title")}</h2>
+        <p style="text-align: justify; line-height: 1.2em;">
+            {$t("home.description")}
+        </p>
     </div>
     <div class="col-6 col-sm-12 border-4">
-        <img src="/images/domaine.jpg" width="100%" alt="domaine 4 vallées" onclick={() => (showModal = true)} />
+        <h4 class="text-center mb-5">
+            Domain des 4 Vallées <small>(cliquer pour agrandir)</small>
+        </h4>
+        <button onclick={() => (showModal = true)} class="btn" style="">
+            <img
+                src="/images/domaine_1024.jpg"
+                width="100%"
+                alt="domaine 4 vallées"
+            />
+        </button>
     </div>
 </div>
 
@@ -30,37 +41,56 @@
 </div>
 
 <div class="row">
-    <div class="col-6 col-sm-12 border-4 pa-2">
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/salon.jpg" width="100%" alt="Salon" />
+            <img src="/images/salon_1024.jpg" width="100%" alt="Salon" />
         </div>
     </div>
-    <div class="col-6 col-sm-12 border-4 pa-2">
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/salle_a_manger.jpg" width="100%" alt="Salle à manger" />
+            <img
+                src="/images/salle_a_manger_1024.jpg"
+                width="100%"
+                alt="Salle à manger"
+            />
         </div>
     </div>
-    <div class="col-6 col-sm-12 border-4 pa-2">
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/cuisine.jpg" width="100%" alt="cuisine" />
+            <img src="/images/cuisine_1024.jpg" width="100%" alt="Cuisine" />
         </div>
     </div>
-    <div class="col-6 col-sm-12 border-4 pa-2">
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="mg-hover-zoom">
-            <img src="/images/vue1.jpg" width="100%" alt="Vue 1" />
+            <!-- <img src="/images/vue1_1024.jpg" width="100%" alt="Vue 1" /> -->
+            <img src="/images/chambre_1024.jpg" width="100%" alt="Chambre" />
         </div>
     </div>
-    <div class="col-6 col-sm-12 border-4 pa-2">
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/immeuble.jpg" width="100%" alt="Immeuble" />
+            <img src="/images/immeuble_1024.jpg" width="100%" alt="Immeuble" />
         </div>
+    </div>
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+        <div class="img-hover-zoom">
+            <img src="/images/plan_1024.jpg" width="100%" alt="Plan" />
+        </div>
+    </div>
+    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+        <h3 class="text-center">Contact</h3>
+        <a href="mailto:contact@veysonnaz-location.ch"
+            >contact@veysonnaz-location.ch</a
+        >
     </div>
 </div>
 
 <div class="row">
-    <div class="col-12 border-2" style="background: #ccc; position: relative; width: 100%; overflow: hidden;">
+    <div
+        class="col-12 border-2"
+        style="background: #ccc; position: relative; width: 100%; overflow: hidden;"
+    >
         <!-- <h2>{$_("homepage")}</h2> -->
-        <h2>{$t('common.homepage')}</h2>
+        <h2>{$t("common.homepage")}</h2>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
@@ -85,7 +115,7 @@
 
 <style lang="scss">
     // https://freefrontend.com/css-snow-effects/
-    @use 'sass:math';
+    @use "sass:math";
     .snowflake {
         --size: 1vw;
         width: var(--size);
@@ -132,5 +162,13 @@
     }
     .img-hover-zoom:hover img {
         transform: scale(1.15);
+    }
+    .btn {
+        background: none;
+        border: none;
+    }
+    .btn:hover {
+        cursor: pointer;
+        background: red;
     }
 </style>
