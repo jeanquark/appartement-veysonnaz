@@ -4,6 +4,8 @@
     import Modal from "@components/Modal.svelte";
 
     let showModal = $state(false);
+    let imgSrc = $state("");
+    let imgDescription = $state("");
 </script>
 
 <svelte:head>
@@ -11,7 +13,7 @@
     <meta name="description" content="" />
 </svelte:head>
 
-<div class="row justify-center align-center">
+<div class="row justify-center align-center mt-4">
     <div class="col-6 col-sm-12 border-3 px-4" style="font-size: 1.3em;">
         <h2 class="text-center py-2">{$t("home.title")}</h2>
         <p style="text-align: justify; line-height: 1.3em;">
@@ -19,7 +21,7 @@
         </p>
     </div>
     <div class="col-6 col-sm-12 border-4 px-4">
-        <img src="/images/vue3.jpg" width="100%" alt="Vue" />
+        <img src="/images/vue4.jpg" width="100%" alt="Vue depuis la terrasse" />
     </div>
 </div>
 
@@ -27,6 +29,9 @@
     {#if showModal}
         <Modal bind:showModal>
             {#snippet header()}{/snippet}
+            {#snippet content()}
+                <img src={imgSrc} width="100%" alt={imgDescription} />
+            {/snippet}
         </Modal>
     {/if}
 </div>
@@ -55,33 +60,56 @@
         <p class="text-center pt-2">Cuisine</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
-        <div class="mg-hover-zoom">
-            <img src="/images/chambre_1024.jpg" width="100%" alt="Chambre" />
+        <div class="img-hover-zoom">
+            <img src="/images/salon3.jpg" width="100%" alt="Intérieur" />
         </div>
+        <p class="text-center pt-2">Intérieur</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
             <img src="/images/immeuble_1024.jpg" width="100%" alt="Immeuble" />
         </div>
+        <p class="text-center pt-2">Immeuble</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
-        <div class="img-hover-zoom">
-            <img src="/images/plan_1024.jpg" width="100%" alt="Plan" />
+        <div class="text-center">
+            <button
+                onclick={() => (
+                    (imgSrc = "/images/plan_1024.jpg"),
+                    (imgDescription = "Plan"),
+                    (showModal = true)
+                )}
+                class="btn"
+                style=""
+            >
+                <img src="/images/plan_1024.jpg" height="300px" alt="Plan" />
+            </button>
         </div>
+        <p class="text-center pt-1">Plan (cliquez pour agrandir)</p>
     </div>
 </div>
 
-<div class="row align-center my-5 border-2">
+<div class="row align-center my-5 border-0">
     <div class="col-4 col-sm-12">
-        <h3 class="text-center py-3">Contact</h3>
-        <div class="text-center">
-            <a href="mailto:contact@veysonnaz-location.ch"
+        <h2 class="text-center py-3">Info & Contact:</h2>
+        <div class="text-center" style="font-size: 1.4em;">
+            <a
+                href="mailto:contact@veysonnaz-location.ch"
+                style="color: var(--color-theme-1);"
                 >contact@veysonnaz-location.ch</a
             >
         </div>
     </div>
     <div class="col-8 col-sm-12">
-        <button onclick={() => (showModal = true)} class="btn" style="">
+        <button
+            onclick={() => (
+                (imgSrc = "/images/domaine_1024.jpg"),
+                (imgDescription = "Domaine des 4 Vallées"),
+                (showModal = true)
+            )}
+            class="btn"
+            style=""
+        >
             <img
                 src="/images/domaine_1024.jpg"
                 width="100%"
@@ -89,7 +117,7 @@
             />
         </button>
         <p class="text-center pt-1">
-            Domaine des 4 Vallées (cliquer pour agrandir)
+            Domaine des 4 Vallées (cliquez pour agrandir)
         </p>
     </div>
 </div>
@@ -179,6 +207,6 @@
     }
     .btn:hover {
         cursor: pointer;
-        background: red;
+        border: 2px solid var(--color-theme-1);
     }
 </style>

@@ -4,7 +4,7 @@
     import { t } from "$lib/translations";
     import CloseIcon from "@components/icons/CloseIcon.svelte";
 
-    let { showModal = $bindable(), header } = $props();
+    let { showModal = $bindable(), header, content } = $props();
     let dialog = $state();
     let loaded = $state([0, 1]);
     let isHovered = $state(false);
@@ -44,11 +44,7 @@ a11y_no_noninteractive_element_interactions -->
         <div class="col-12 border-2">
             {@render header?.()}
             {#if browser}
-                <img
-                    src="/images/domaine.jpg"
-                    width="100%"
-                    alt="Domaine des 4 Vallées"
-                />
+                {@render content?.()}
             {/if}
         </div>
     </div>

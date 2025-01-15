@@ -44,8 +44,8 @@
     <a href="{base}/dispo">Disponibilités</a>
     <a href="{base}/contact">Contact - réservation</a>
     <a href="/{$locale}/about">About</a>
-    $locale: {$locale}<br />
-    <div class="custom-select2">
+    <!-- $locale: {$locale}<br /> -->
+    <div class="">
         <select
             bind:value={$locale}
             onchange={handleChange}
@@ -66,6 +66,18 @@
     <a href="{base}/galerie">Galerie</a>
     <a href="{base}/dispo">Disponibilités</a>
     <a href="{base}/contact">Contact - réservation</a>
+    <div class="">
+        <select
+            bind:value={$locale}
+            onchange={handleChange}
+            class="arrows"
+            style=""
+        >
+            {#each $locales as value}
+                <option {value} style="">{$t(`lang.${value}`)}</option>
+            {/each}
+        </select>
+    </div>
 </div>
 
 <style>
@@ -78,12 +90,19 @@
     }
 
     #navbar a {
+        text-decoration: none;
+        color: var(--color-text);
         padding: 15px;
+        font-size: 1.2em;
+    }
+
+    #navbar a:hover {
+        color: var(--color-theme-1);
     }
 
     #navbar a.active {
-        color: orange;
-        background: yellow;
+        /* background-color: #ddd; */
+        color: black;
     }
     #navbarSlide {
         background-color: #333; /* Black background color */
