@@ -18,7 +18,7 @@ const config = {
 			assets: 'build',
 			fallback: '404.html',
 			precompress: false,
-			strict: true
+			strict: false
 		}),
 		// prerender: {
 		// 	// NOTE: You can modify your exported error pages here.

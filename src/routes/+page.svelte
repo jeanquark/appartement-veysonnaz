@@ -1,5 +1,5 @@
 <script>
-    // import { _ } from "svelte-i18n";
+    import { base } from "$app/paths";
     import { t } from "$lib/translations";
     import Modal from "@components/Modal.svelte";
 
@@ -39,14 +39,14 @@
 <div class="row">
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/salon_1024.jpg" width="100%" alt="Salon" />
+            <img src="{base}/images/salon_1024.jpg" width="100%" alt="Salon" />
         </div>
         <p class="text-center pt-2">Salon</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
             <img
-                src="/images/salle_a_manger_1024.jpg"
+                src="{base}/images/salle_a_manger_1024.jpg"
                 width="100%"
                 alt="Salle à manger"
             />
@@ -55,19 +55,27 @@
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/cuisine_1024.jpg" width="100%" alt="Cuisine" />
+            <img
+                src="{base}/images/cuisine_1024.jpg"
+                width="100%"
+                alt="Cuisine"
+            />
         </div>
         <p class="text-center pt-2">Cuisine</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/salon3.jpg" width="100%" alt="Intérieur" />
+            <img src="{base}/images/salon3.jpg" width="100%" alt="Intérieur" />
         </div>
         <p class="text-center pt-2">Intérieur</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
-            <img src="/images/immeuble_1024.jpg" width="100%" alt="Immeuble" />
+            <img
+                src="{base}/images/immeuble_1024.jpg"
+                width="100%"
+                alt="Immeuble"
+            />
         </div>
         <p class="text-center pt-2">Immeuble</p>
     </div>
@@ -75,14 +83,18 @@
         <div class="text-center">
             <button
                 onclick={() => (
-                    (imgSrc = "/images/plan_1024.jpg"),
+                    (imgSrc = `${base}/images/plan_1024.jpg`),
                     (imgDescription = "Plan"),
                     (showModal = true)
                 )}
                 class="btn"
                 style=""
             >
-                <img src="/images/plan_1024.jpg" height="300px" alt="Plan" />
+                <img
+                    src="{base}/images/plan_1024.jpg"
+                    height="300px"
+                    alt="Plan"
+                />
             </button>
         </div>
         <p class="text-center pt-1">Plan (cliquez pour agrandir)</p>
@@ -103,7 +115,7 @@
     <div class="col-8 col-sm-12">
         <button
             onclick={() => (
-                (imgSrc = "/images/domaine_1024.jpg"),
+                (imgSrc = `${base}/images/domaine_1024.jpg`),
                 (imgDescription = "Domaine des 4 Vallées"),
                 (showModal = true)
             )}
@@ -111,7 +123,7 @@
             style=""
         >
             <img
-                src="/images/domaine_1024.jpg"
+                src="{base}/images/domaine_1024.jpg"
                 width="100%"
                 alt="domaine 4 vallées"
             />

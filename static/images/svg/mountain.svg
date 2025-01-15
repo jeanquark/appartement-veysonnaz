@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
+   sodipodi:docname="mountain.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <sodipodi:namedview
+      id="namedview1"
+      pagecolor="#ffffff"
+      bordercolor="#666666"
+      borderopacity="1.0"
+      inkscape:showpageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:deskcolor="#d1d1d1"
+      inkscape:document-units="mm"
+      inkscape:zoom="0.73851712"
+      inkscape:cx="397.41801"
+      inkscape:cy="561.25984"
+      inkscape:window-width="1920"
+      inkscape:window-height="1106"
+      inkscape:window-x="-11"
+      inkscape:window-y="-11"
+      inkscape:window-maximized="1"
+      inkscape:current-layer="layer1" />
+   <defs
+      id="defs1" />
+
+   <style>
+      .color2 {
+      fill: #FF00FF;
+      }
+      .color {animation: col 3s linear infinite; } @keyframes col { 0%,49% {fill:none} 50%
+      {fill:black} 75%,100% {fill:none} } </style>
+   <g
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      id="layer1">
+      <path
+         class="color2"
+         style="stroke:#000000;stroke-width:0.52916667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+         d="M -0.02821211,124.69909 59.134831,15.023529 74.930786,64.843474 91.013943,44.772128 131.50903,124.34067 Z"
+         id="path1"
+         sodipodi:nodetypes="cccccc" />
+   </g>
+</svg>
