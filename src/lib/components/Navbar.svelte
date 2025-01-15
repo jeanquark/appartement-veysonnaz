@@ -2,14 +2,12 @@
     import { onMount } from "svelte";
     import { base } from "$app/paths";
     import { page } from "$app/stores";
-    // import { locale, locales } from "svelte-i18n";
     import { t, locales, locale } from "$lib/translations";
 
     let { children } = $props();
-    // locale.set("fr");
-    // $: ({ route } = $page.data);
 
     onMount(() => {
+        // console.log("$page.url.pathname: ", $page.url.pathname);
         window.onscroll = function () {
             scrollFunction();
         };
@@ -36,7 +34,10 @@
 </script>
 
 <div id="navbar">
-    <a href="{base}/">Accueil</a>
+    <!-- <a href="{base}/" class={$page.url.pathname == "/" ? "active" : "active"}
+        >Accueil</a
+    > -->
+    <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
     <a href="{base}/appartement">L'appartement</a>
     <a href="{base}/veysonnaz">Veysonnaz</a>
     <a href="{base}/galerie">Galerie</a>
@@ -56,31 +57,10 @@
             {/each}
         </select>
     </div>
-
-    <!-- $locales: {$locales}
-    $locale: {$locale}
-    <select bind:value={$locale}>
-        {#each $locales as locale}
-            <option value={locale}>{locale}</option>
-        {/each}
-    </select> -->
-
-    <!-- <select
-        onchange={({ target }) => {
-            goto(`/${target.value}${route}`);
-            document.querySelector("html").setAttribute("lang", target.value);
-        }}
-    >
-        {#each $locales as lc}
-            <option value={lc} selected={lc === $locale}
-                >{$t(`lang.${lc}`)}</option
-            >
-        {/each}
-    </select> -->
 </div>
 
 <div id="navbarSlide">
-    <a href="{base}/">Accueil</a>
+    <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
     <a href="{base}/appartement">L'appartement</a>
     <a href="{base}/veysonnaz">Veysonnaz</a>
     <a href="{base}/galerie">Galerie</a>
@@ -101,6 +81,10 @@
         padding: 15px;
     }
 
+    #navbar a.active {
+        color: orange;
+        background: yellow;
+    }
     #navbarSlide {
         background-color: #333; /* Black background color */
         position: fixed; /* Make it stick/fixed */
@@ -124,6 +108,10 @@
     }
 
     #navbarSlide a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    #navbarSlide a.active {
         background-color: #ddd;
         color: black;
     }

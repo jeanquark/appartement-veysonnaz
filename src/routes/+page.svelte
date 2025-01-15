@@ -12,23 +12,14 @@
 </svelte:head>
 
 <div class="row justify-center align-center">
-    <div class="col-6 col-sm-12 border-3" style="font-size: 1.3em;">
-        <h2 class="text-center">{$t("home.title")}</h2>
-        <p style="text-align: justify; line-height: 1.2em;">
+    <div class="col-6 col-sm-12 border-3 px-4" style="font-size: 1.3em;">
+        <h2 class="text-center py-2">{$t("home.title")}</h2>
+        <p style="text-align: justify; line-height: 1.3em;">
             {$t("home.description")}
         </p>
     </div>
-    <div class="col-6 col-sm-12 border-4">
-        <h4 class="text-center mb-5">
-            Domain des 4 Vallées <small>(cliquer pour agrandir)</small>
-        </h4>
-        <button onclick={() => (showModal = true)} class="btn" style="">
-            <img
-                src="/images/domaine_1024.jpg"
-                width="100%"
-                alt="domaine 4 vallées"
-            />
-        </button>
+    <div class="col-6 col-sm-12 border-4 px-4">
+        <img src="/images/vue3.jpg" width="100%" alt="Vue" />
     </div>
 </div>
 
@@ -45,6 +36,7 @@
         <div class="img-hover-zoom">
             <img src="/images/salon_1024.jpg" width="100%" alt="Salon" />
         </div>
+        <p class="text-center pt-2">Salon</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
@@ -54,15 +46,16 @@
                 alt="Salle à manger"
             />
         </div>
+        <p class="text-center pt-2">Salle à manger</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="img-hover-zoom">
             <img src="/images/cuisine_1024.jpg" width="100%" alt="Cuisine" />
         </div>
+        <p class="text-center pt-2">Cuisine</p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
         <div class="mg-hover-zoom">
-            <!-- <img src="/images/vue1_1024.jpg" width="100%" alt="Vue 1" /> -->
             <img src="/images/chambre_1024.jpg" width="100%" alt="Chambre" />
         </div>
     </div>
@@ -76,11 +69,28 @@
             <img src="/images/plan_1024.jpg" width="100%" alt="Plan" />
         </div>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
-        <h3 class="text-center">Contact</h3>
-        <a href="mailto:contact@veysonnaz-location.ch"
-            >contact@veysonnaz-location.ch</a
-        >
+</div>
+
+<div class="row align-center my-5 border-2">
+    <div class="col-4 col-sm-12">
+        <h3 class="text-center py-3">Contact</h3>
+        <div class="text-center">
+            <a href="mailto:contact@veysonnaz-location.ch"
+                >contact@veysonnaz-location.ch</a
+            >
+        </div>
+    </div>
+    <div class="col-8 col-sm-12">
+        <button onclick={() => (showModal = true)} class="btn" style="">
+            <img
+                src="/images/domaine_1024.jpg"
+                width="100%"
+                alt="domaine 4 vallées"
+            />
+        </button>
+        <p class="text-center pt-1">
+            Domaine des 4 Vallées (cliquer pour agrandir)
+        </p>
     </div>
 </div>
 
