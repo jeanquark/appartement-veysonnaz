@@ -6,7 +6,8 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 		  scss: {
-			api: 'modern-compiler' // or "modern"
+			renderSync: true,
+			// api: 'modern-compiler' // or "modern"
 		  }
 		}
 	  }
