@@ -1,8 +1,14 @@
 <script>
+    import { onMount } from "svelte";
     import Navbar from "@components/Navbar.svelte";
     import Footer from "@components/Footer.svelte";
+    import { initGA } from "@lib/analytics.js";
 
     let { children } = $props();
+
+    onMount(() => {
+        initGA();
+    });
 </script>
 
 <div class="app">
