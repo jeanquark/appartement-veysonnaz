@@ -38,7 +38,7 @@
         >Accueil</a
     > -->
     <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
-    <a href="{base}/tarifs">Tarifs</a>
+    <a href="{base}/tarifs">Prix</a>
     <div class="">
         <select
             bind:value={$locale}
@@ -55,7 +55,7 @@
 
 <div id="navbarSlide">
     <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
-    <a href="{base}/tarifs">Tarifs</a>
+    <a href="{base}/tarifs">Prix</a>
     <div class="">
         <select
             bind:value={$locale}

@@ -104,7 +104,8 @@
 
 <div class="row align-center my-5 border-0">
     <div class="col-4 col-sm-12">
-        <h2 class="text-center py-3">Info & Contact:</h2>
+        <h2 class="text-center">Info & Contact:</h2>
+        <br /><br />
         <div class="text-center" style="font-size: 1.4em;">
             <a
                 href="mailto:contact@veysonnaz-location.ch"
@@ -132,41 +133,6 @@
         <p class="text-center pt-1">
             Domaine des 4 Vallées (cliquez pour agrandir)
         </p>
-    </div>
-</div>
-
-<div class="row" style="display: none;">
-    <div
-        class="col-12 border-2"
-        style="background: #ccc; position: relative; width: 100%; overflow: hidden;"
-    >
-        <!-- <h2>{$_("homepage")}</h2> -->
-        <h2>{$t("common.homepage")}</h2>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <div class="snowflake"></div>
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
     </div>
 </div>
 
