@@ -135,7 +135,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" style="display: none;">
     <div
         class="col-12 border-2"
         style="background: #ccc; position: relative; width: 100%; overflow: hidden;"
@@ -158,6 +158,12 @@
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <br /><br /><br /><br />
         <br /><br /><br /><br />
         <br /><br /><br /><br />

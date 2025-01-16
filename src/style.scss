@@ -17,20 +17,21 @@
     }
 
     100% {
-        transform: translate3d(var(--left-end), 110vh, 0);
-        // transform: translate3d(var(--left-end), 100vh, 0);
+        // transform: translate3d(var(--left-end), 110vh, 0);
+        transform: translate3d(var(--left-end), 1500px, 0);
     }
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 150 {
     .snowflake:nth-child(#{$i}) {
-        --size: #{math.random(5) * 0.2}vw;
+        --size: #{math.random(6) * 0.2}vw;
         --left-ini: #{math.random(20) - 10}vw;
         --left-end: #{math.random(20) - 10}vw;
         // --left-ini: #{math.random(20) - 20}vw;
         // --left-end: #{math.random(20) - 20}vw;
         left: #{math.random(100)}vw;
-        animation: snowfall #{5 + math.random(10)}s linear infinite;
+        // animation: snowfall #{5 + math.random(10)}s linear infinite;
+        animation: snowfall #{15 + math.random(20)}s linear infinite;
         animation-delay: -#{math.random(10)}s;
     }
 }
