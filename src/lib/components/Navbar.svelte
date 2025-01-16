@@ -38,13 +38,7 @@
         >Accueil</a
     > -->
     <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
-    <a href="{base}/appartement">L'appartement</a>
-    <a href="{base}/veysonnaz">Veysonnaz</a>
-    <a href="{base}/galerie">Galerie</a>
-    <a href="{base}/dispo">Disponibilités</a>
-    <a href="{base}/contact">Contact - réservation</a>
-    <a href="/{$locale}/about">About</a>
-    <!-- $locale: {$locale}<br /> -->
+    <a href="{base}/tarifs">Tarifs</a>
     <div class="">
         <select
             bind:value={$locale}
@@ -61,11 +55,7 @@
 
 <div id="navbarSlide">
     <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
-    <a href="{base}/appartement">L'appartement</a>
-    <a href="{base}/veysonnaz">Veysonnaz</a>
-    <a href="{base}/galerie">Galerie</a>
-    <a href="{base}/dispo">Disponibilités</a>
-    <a href="{base}/contact">Contact - réservation</a>
+    <a href="{base}/tarifs">Tarifs</a>
     <div class="">
         <select
             bind:value={$locale}
@@ -115,7 +105,6 @@
         justify-content: center;
         z-index: 1000;
     }
-
     /* Style the navbar links */
     #navbarSlide a {
         float: left;
@@ -125,7 +114,6 @@
         padding: 15px;
         text-decoration: none;
     }
-
     #navbarSlide a:hover {
         background-color: #ddd;
         color: black;
@@ -134,9 +122,11 @@
         background-color: #ddd;
         color: black;
     }
+
     select {
         width: 100px;
         padding: 5px 10px;
+        border: none;
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;

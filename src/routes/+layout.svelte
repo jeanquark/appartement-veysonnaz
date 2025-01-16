@@ -1,14 +1,12 @@
 <script>
-    import Navbar from '@components/Navbar.svelte'
-    import Header from '@components/Header.svelte'
-    import Footer from '@components/Footer.svelte'
+    import Navbar from "@components/Navbar.svelte";
+    import Footer from "@components/Footer.svelte";
 
-    let { children } = $props()
+    let { children } = $props();
 </script>
 
 <div class="app">
     <Navbar />
-    <Header />
     <main class="main">
         <div class="container border-5">
             {@render children()}

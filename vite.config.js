@@ -5,10 +5,10 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	css: {
 		preprocessorOptions: {
-		  scss: {
-			renderSync: true,
-			// api: 'modern-compiler' // or "modern"
-		  }
+			scss: {
+				renderSync: true,
+				api: 'modern-compiler' // or "modern"
+			}
 		}
-	  }
+	}
 });
