@@ -3,12 +3,12 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	css: {
-		preprocessorOptions: {
-			scss: {
-				renderSync: true,
-				api: 'modern-compiler' // or "modern"
-			}
-		}
-	}
+	// css: {
+	// 	preprocessorOptions: {
+	// 		scss: {
+	// 			renderSync: true,
+	// 			api: 'modern-compiler' // or "modern"
+	// 		}
+	// 	}
+	// }
 });

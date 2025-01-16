@@ -163,7 +163,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<!--<style lang="scss">
     // https://freefrontend.com/css-snow-effects/
     @use "sass:math";
     .snowflake {
@@ -205,6 +205,26 @@
 
     .img-hover-zoom {
         // height: 300px; /* [1.1] Set it as per your need */
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+    .img-hover-zoom img {
+        transition: transform 0.5s ease;
+    }
+    .img-hover-zoom:hover img {
+        transform: scale(1.15);
+    }
+    .btn {
+        background: none;
+        border: none;
+    }
+    .btn:hover {
+        cursor: pointer;
+        border: 2px solid var(--color-theme-1);
+    }
+</style>-->
+
+<style>
+    .img-hover-zoom {
         overflow: hidden; /* [1.2] Hide the overflowing of child elements */
     }
     .img-hover-zoom img {

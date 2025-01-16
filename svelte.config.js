@@ -36,7 +36,7 @@ const config = {
 			'@store': path.resolve('./src/store')
 		},
 	},
-	preprocess: [vitePreprocess()]
+	// preprocess: [vitePreprocess()]
 };
 
 export default config;
