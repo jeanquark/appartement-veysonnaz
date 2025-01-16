@@ -2,6 +2,7 @@
     import { base } from "$app/paths";
     import { t } from "$lib/translations";
     import Modal from "@components/Modal.svelte";
+    import "../style.scss";
 
     let showModal = $state(false);
     let imgSrc = $state("");
@@ -163,6 +164,26 @@
     </div>
 </div>
 
+<!-- <style>
+    .img-hover-zoom {
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+    .img-hover-zoom img {
+        transition: transform 0.5s ease;
+    }
+    .img-hover-zoom:hover img {
+        transform: scale(1.15);
+    }
+    .btn {
+        background: none;
+        border: none;
+    }
+    .btn:hover {
+        cursor: pointer;
+        border: 2px solid var(--color-theme-1);
+    }
+</style> -->
+
 <!--<style lang="scss">
     // https://freefrontend.com/css-snow-effects/
     @use "sass:math";
@@ -222,23 +243,3 @@
         border: 2px solid var(--color-theme-1);
     }
 </style>-->
-
-<style>
-    .img-hover-zoom {
-        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-    }
-    .img-hover-zoom img {
-        transition: transform 0.5s ease;
-    }
-    .img-hover-zoom:hover img {
-        transform: scale(1.15);
-    }
-    .btn {
-        background: none;
-        border: none;
-    }
-    .btn:hover {
-        cursor: pointer;
-        border: 2px solid var(--color-theme-1);
-    }
-</style>

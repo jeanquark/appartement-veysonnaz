@@ -1,0 +1,64 @@
+@use "sass:math";
+// https://freefrontend.com/css-snow-effects/
+
+.snowflake {
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vh;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+        // transform: translate3d(var(--left-end), 100vh, 0);
+    }
+}
+
+@for $i from 1 through 50 {
+    .snowflake:nth-child(#{$i}) {
+        --size: #{math.random(5) * 0.2}vw;
+        --left-ini: #{math.random(20) - 10}vw;
+        --left-end: #{math.random(20) - 10}vw;
+        // --left-ini: #{math.random(20) - 20}vw;
+        // --left-end: #{math.random(20) - 20}vw;
+        left: #{math.random(100)}vw;
+        animation: snowfall #{5 + math.random(10)}s linear infinite;
+        animation-delay: -#{math.random(10)}s;
+    }
+}
+
+.snowflake:nth-child(6n) {
+    filter: blur(1px);
+}
+
+.img-hover-zoom {
+    // height: 300px; /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.15);
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-theme-1);
+}

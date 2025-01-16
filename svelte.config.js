@@ -2,7 +2,9 @@ import path from 'path';
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import preprocessor from 'svelte-preprocess';
 // import lang from './src/lib/translations/lang.js';
+import { sveltePreprocess } from 'svelte-preprocess';
 
 // const supportedLocales = Object.keys(lang);
 
@@ -36,7 +38,12 @@ const config = {
 			'@store': path.resolve('./src/store')
 		},
 	},
-	// preprocess: [vitePreprocess()]
+	preprocess: [vitePreprocess()]
+	// preprocess: [sveltePreprocess({
+	// 	scss: {
+	// 		prependData: "@import './static/style.scss';"
+	// 	}
+	// })]
 };
 
 export default config;
