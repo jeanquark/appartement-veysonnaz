@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="footer border-1" style="">
+<div class="footer border-0" style="">
     <!-- <footer></footer> -->
     <!-- <h2>Footer</h2> -->
     <!-- <svg>
@@ -58,13 +58,13 @@
     .footer {
         margin-top: auto;
         width: 100%;
-        height: 200px;
+        height: 400px;
         /* background-image: url("/images/svg/footer-min.svg"); */
         background-image: url("/images/svg/mountain.svg");
         background-repeat: no-repeat;
         background-position: center center;
         /* background-position: top left; */
-        /* background-size: cover; */
-        background-size: contain;
+        background-size: cover;
+        /* background-size: contain; */
     }
 </style>

@@ -15,13 +15,13 @@
 </svelte:head>
 
 <div class="row justify-center align-center mt-4">
-    <div class="col-6 col-sm-12 border-3 px-4" style="font-size: 1.3em;">
+    <div class="col-6 col-sm-12 px-4 border-0" style="font-size: 1.3em;">
         <h2 class="text-center py-2">{$t("home.title")}</h2>
         <p style="text-align: justify; line-height: 1.3em;">
             {$t("home.description")}
         </p>
     </div>
-    <div class="col-6 col-sm-12 border-4 px-4">
+    <div class="col-6 col-sm-12 px-4 border-0">
         <img src="/images/vue4.jpg" width="100%" alt="Vue depuis la terrasse" />
     </div>
 </div>
@@ -38,13 +38,13 @@
 </div>
 
 <div class="row">
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img src="{base}/images/salon_1024.jpg" width="100%" alt="Salon" />
         </div>
         <p class="text-center pt-2">Salon</p>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img
                 src="{base}/images/salle_a_manger_1024.jpg"
@@ -54,7 +54,7 @@
         </div>
         <p class="text-center pt-2">Salle à manger</p>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img
                 src="{base}/images/cuisine_1024.jpg"
@@ -64,13 +64,13 @@
         </div>
         <p class="text-center pt-2">Cuisine</p>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img src="{base}/images/salon3.jpg" width="100%" alt="Intérieur" />
         </div>
         <p class="text-center pt-2">Intérieur</p>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img
                 src="{base}/images/immeuble_1024.jpg"
@@ -80,7 +80,7 @@
         </div>
         <p class="text-center pt-2">Immeuble</p>
     </div>
-    <div class="col-4 col-sm-12 col-xs-12 border-4 pa-5">
+    <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="text-center">
             <button
                 onclick={() => (

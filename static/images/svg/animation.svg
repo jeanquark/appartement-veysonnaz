@@ -1,61 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-   width="940"
-   height="400"
-   viewBox="0 0 248.70833 105.83334"
-   version="1.1"
-   id="svg8"
-   inkscape:version="1.3.1 (91b66b0783, 2023-11-16)"
-   sodipodi:docname="mountain.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-   <defs
-      id="defs2" />
-   <sodipodi:namedview
-      id="base"
-      pagecolor="#ffffff"
-      bordercolor="#666666"
-      borderopacity="1.0"
-      inkscape:pageopacity="0.0"
-      inkscape:pageshadow="2"
-      inkscape:zoom="0.98994949"
-      inkscape:cx="417.193"
-      inkscape:cy="140.91628"
-      inkscape:document-units="mm"
-      inkscape:current-layer="layer1"
-      showgrid="false"
-      units="px"
-      inkscape:window-width="1920"
-      inkscape:window-height="1106"
-      inkscape:window-x="-11"
-      inkscape:window-y="-11"
-      inkscape:window-maximized="1"
-      inkscape:showpageshadow="2"
-      inkscape:pagecheckerboard="0"
-      inkscape:deskcolor="#d1d1d1" />
-   <metadata
-      id="metadata5">
-      <rdf:RDF>
-         <cc:Work
-            rdf:about="">
-            <dc:format>image/svg+xml</dc:format>
-            <dc:type
-               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-         </cc:Work>
-      </rdf:RDF>
-   </metadata>
+<svg>
    <g
-      inkscape:groupmode="layer"
       style="display:inline;fill:none"
-      id="layer7"
-      inkscape:label="Sky">
+      id="layer7">
       <rect
          style="fill:#0167a9;fill-opacity:0.705882;stroke-width:1.04469"
          id="rect3"
@@ -65,8 +14,6 @@
          y="-4.5357189" />
    </g>
    <g
-      inkscape:label="Level 1"
-      inkscape:groupmode="layer"
       id="layer1"
       style="display:inline;fill:none">
       <path
@@ -74,88 +21,71 @@
          d="m -1.9796266,40.907561 2.33860813,-1.13589 6.61492087,2.40543 11.2253196,-6.68174 6.347651,1.00226 1.5368,-0.46772 c 0,0 1.603616,1.33634 2.27179,1.20271 0.668176,-0.13364 1.603618,-0.93544 1.603618,-0.93544 l 0.935442,0.93544 6.748558,-2.80633 0.400902,0.66817 2.405427,-1.20271 9.755339,5.14494 0.935442,-0.4009 9.68852,7.95126 3.608139,-0.4009 2.338607,1.67043 11.358957,-5.61266 5.81311,2.93997 4.94449,-3.0736 4.20949,2.60588 0.73499,-0.73499 1.46999,1.00226 7.750806,-3.54133 1.73725,2.07134 1.5368,-0.53454 5.7463,2.60588 0.93544,-0.93544 1.06908,0.93544 1.9377,-1.9377 0.86863,0.66817 9.95579,0.73499 3.0736,1.93771 3.74177,-1.87089 3.20724,0.93544 1.87088,-0.33408 3.00678,1.67043 0.735,-0.20045 2.33861,0.80181 3.54132,-2.73952 4.07586,1.73726 3.87541,1.80407 4.34313,-2.80633 1.80407,0.60135 1.67043,-0.60135 1.40316,0.53454 1.80407,-2.13816 3.20724,2.13816 1.00226,-1.26954 2.47224,-1.46998 0.73499,0.73499 1.87089,-2.07133 2.07134,0.86862 2.13815,-2.73951 0.80181,0.4009 2.26635,-1.37954 3.54676,2.51544 2.87315,-3.00678 1.26953,0.60135 1.5368,-0.4009 c 0,0 0.66818,1.33635 0.73499,1.00226 0.0668,-0.33409 2.60588,-3.34087 2.60588,-3.34087 l 2.47224,-1.06908 3.14042,-1.87089 3.40769,-0.93544 4.27631,3.80859 2.20497,2.40543 3.0736,-0.40091 2.27179,2.27179 1.1359,-0.20045 2.20497,1.93771 3.34087,-1.26953 4.40995,0.66817 3.0736,0.13364 5.74629,2.00452 6.74618,-4.1494 4.11403,-0.01957 5.64368,-0.353663 1e-5,95.461087 -264.06229,0.53453 0.26727,-95.949759 z"
          id="layer1">
          <!-- https://colors.artyclick.com/color-shades-finder/?color=#000000 -->
-         <animate attributeName="fill" begin="4s" dur="10s"
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
             values="#E8F9F1; #EBFAF3; #EDFBF4; #EFFBF6; #F1FCF7; #F4FCF8; #F6FDFA; #F8FDFB; #FAFEFC; #FDFEFE; #FFFFFF;"
             repeatCount="indefinite" />
       </path>
    </g>
    <g
-      inkscape:groupmode="layer"
       id="layer3"
-      inkscape:label="Level 2"
       style="display:inline;fill:none">
       <path
          style="fill:#60d79c;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -3.436038,51.094895 5.2916661,-2.078871 1.322917,0.944941 c 0,0 1.889881,-2.267857 2.267857,-2.173361 0.377976,0.09449 5.4806549,1.322916 5.4806549,1.322916 0,0 6.803572,3.307292 7.276041,3.496279 0.472469,0.188989 13.418156,3.874256 13.418156,3.874256 l 2.173361,-0.377976 5.57515,0.850445 2.834822,-3.685267 7.748511,0.850447 c 0,0 9.827381,1.6064 10.48884,1.700893 0.661458,0.09449 9.732885,-0.566965 9.732885,-0.566965 l 9.165924,0.944941 18.237358,7.181548 28.442695,11.055802 12.18974,3.212799 8.31547,3.874256 25.46586,-9.678408 11.8935,-2.138156 17.78177,-7.274742 c 0,0 6.27248,-0.208804 6.94066,-0.34244 0.66817,-0.133633 10.95805,-7.216275 10.95805,-7.216275 l 0.8018,-1.236121 2.2718,-0.233861 13.83119,-8.485804 7.08265,-5.011312 9.42124,-0.267269 v 96.21704 l -264.062282,0.53453 0.534539,-84.724437 z"
-         id="path4533"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccscscccccscccccccccscccccccccc">
-         <animate attributeName="fill" begin="4s" dur="10s"
+         id="path4533">
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
-            values="#60D79C; #6EDAA4; #7DDEAD; #8BE2B7; #9AE7C0; #AAEBCA; #BAEFD4; #CBF3DF; #DCF7E9; #DCF7E9; #DCF7E9;"
+            values="#60D79C; #6EDAA4; #7DDEAD; #8BE2B7; #9AE7C0; #AAEBCA; #BAEFD4; #CBF3DF; #DCF7E9; #EDFBF4; #EDFBF4;"
             repeatCount="indefinite" />
       </path>
    </g>
    <g
-      inkscape:groupmode="layer"
       id="layer5"
-      inkscape:label="Level 3"
       style="display:inline">
       <path
          style="display:inline;fill:#33cc7f;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -4.5653579,68.726734 32.5657759,12.276218 7.166163,1.820773 2.95667,-0.918739 4.610399,1.202713 5.04471,-0.968851 26.726954,8.15172 24.922889,6.614922 9.421237,2.472242 -2.87314,5.779708 c -16.25512,5.30599 -31.65898,11.14402 -47.239888,16.87139 l -42.963576,11.96031 -20.3793015,-1.26953 z"
-         id="path3"
-         sodipodi:nodetypes="cccccccccccccc">
-         <animate attributeName="fill" begin="4s" dur="10s"
+         id="path3">
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
-            values="#33CC7F; #44D18B; #56D696; #68DBA2; #7BE0AE; #8FE6BA; #A4EBC7; #BAF0D5; #D0F5E2; #D0F5E2; #D0F5E2;"
+            values="#33CC7F; #44D18B; #56D696; #68DBA2; #7BE0AE; #8FE6BA; #A4EBC7; #BAF0D5; #D0F5E2; #E7FAF1; #E7FAF1;"
             repeatCount="indefinite" />
       </path>
    </g>
    <g
-      inkscape:groupmode="layer"
-      id="layer4"
-      inkscape:label="Level 4">
+      id="layer4">
       <path
          style="fill:#8ee3b8;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 99.230213,64.061232 11.477667,-7.214957 15.53616,7.787653 8.69346,-5.197171 20.31622,-3.307292 15.30803,4.157737 18.76256,7.250984 -5.4389,2.292915 -11.52827,1.889882 -25.85223,9.782507 -8.82709,-4.018372 -11.81175,-3.118302 z"
-         id="path1"
-         sodipodi:nodetypes="ccccccccccccc">
-         <animate attributeName="fill" begin="4s" dur="10s"
+         id="path1">
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
-            values="#8EE3B8; #99E6C0; #A4E9C6; #AEEBCD; #B9EED4; #C4F1DB; #D0F4E2; #DBF7E9; #E7F9F0; #E7F9F0; #E7F9F0;"
+            values="#8EE3B8; #99E6C0; #A4E9C6; #AEEBCD; #B9EED4; #C4F1DB; #D0F4E2; #DBF7E9; #E7F9F0; #F3FCF8; #F3FCF8;"
             repeatCount="indefinite" />
       </path>
    </g>
    <g
-      inkscape:groupmode="layer"
-      id="layer6"
-      inkscape:label="Level 5">
+      id="layer6">
       <path
          style="display:inline;fill:#bbeed4;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 156.2459,56.412945 10.19013,-8.785078 7.14953,2.170495 3.31253,-0.11644 23.90176,5.597096 4.34672,2.504093 9.6,0.280861 -6.05647,4.065865 -7.08705,0.330729 -12.26989,5.066402 -18.48793,-7.19252 z"
-         id="path2"
-         sodipodi:nodetypes="cccccccccccc">
-         <animate attributeName="fill" begin="4s" dur="10s"
+         id="path2">
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
-            values="#BBEED4; #C2EFD8; #C8F1DC; #CFF3E0; #D6F4E4; #DCF6E9; #E3F8ED; #EAFAF2; #F1FBF6; #F1FBF6; #F1FBF6;"
+            values="#BBEED4; #C2EFD8; #C8F1DC; #CFF3E0; #D6F4E4; #DCF6E9; #E3F8ED; #EAFAF2; #F1FBF6; #F8FDFA; #F8FDFA;"
             repeatCount="indefinite" />
       </path>
    </g>
    <g
-      inkscape:groupmode="layer"
-      id="layer9"
-      inkscape:label="Level 6">
+      id="layer9">
       <path
          style="display:inline;fill:#289f63;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 252.97453,39.63759 -9.42124,0.267269 -20.91384,13.497116 -2.2885,0.217156 -0.7851,1.252826 -10.86276,7.184247 -7.09442,0.38282 -17.7233,7.26639 -11.8935,2.138156 -25.46586,9.678408 -12.47321,6.425594 -0.85045,2.456844 -19.37128,6.803573 -5.19717,2.55134 -2.74033,5.480651 -21.639128,7.37054 -25.135421,9.26042 -34.679315,9.73288 0.377975,12.28423 226.974689,-3.02381 z"
-         id="path4536"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccccccccccccccccccc">
-         <animate attributeName="fill" begin="4s" dur="10s"
+         id="path4536">
+         <animate attributeName="fill" begin="0s" dur="6s"
             keyTimes="0; 0.1; 0.2; 0.3; 0.4; 0.5; 0.6; 0.7; 0.8; 0.9; 1"
-            values="#289F63; #37A86F; #47B17C; #59BB8A; #6CC599; #81CFA8; #97D8B8; #AFE2C9; #C8ECDA; #C8ECDA; #C8ECDA;"
+            values="#289F63; #37A86F; #47B17C; #59BB8A; #6CC599; #81CFA8; #97D8B8; #AFE2C9; #C8ECDA; #E3F5EC; #E3F5EC;"
             repeatCount="indefinite" />
       </path>
    </g>
