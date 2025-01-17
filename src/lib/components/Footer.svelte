@@ -58,7 +58,7 @@
     .footer {
         margin-top: auto;
         width: 100%;
-        height: 400px;
+        height: 500px;
         /* background-image: url("/images/svg/footer-min.svg"); */
         background-image: url("/images/svg/mountain.svg");
         background-repeat: no-repeat;
