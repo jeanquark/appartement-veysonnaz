@@ -37,9 +37,11 @@
     <!-- <a href="{base}/" class={$page.url.pathname == "/" ? "active" : "active"}
         >Accueil</a
     > -->
-    <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
+    <a href="{base}/" class:active={$page.url.pathname === "/"}
+        >{$t("home.home")}</a
+    >
     <a href="{base}/tarifs" class:active={$page.url.pathname === "/tarifs"}
-        >Tarifs</a
+        >{$t("home.price")}</a
     >
     <div class="">
         <select
@@ -56,9 +58,11 @@
 </div>
 
 <div id="navbarSlide">
-    <a href="{base}/" class:active={$page.url.pathname === "/"}>Accueil</a>
+    <a href="{base}/" class:active={$page.url.pathname === "/"}
+        >{$t("home.home")}</a
+    >
     <a href="{base}/tarifs" class:active={$page.url.pathname === "/tarifs"}
-        >Tarifs</a
+        >{$t("home.price")}</a
     >
     <div class="">
         <select

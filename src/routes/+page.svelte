@@ -42,7 +42,9 @@
         <div class="img-hover-zoom">
             <img src="{base}/images/salon_1024.jpg" width="100%" alt="Salon" />
         </div>
-        <p class="text-center pt-2">Salon</p>
+        <p class="text-center pt-2">
+            {$t("home.salon")}
+        </p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
@@ -52,7 +54,9 @@
                 alt="Salle à manger"
             />
         </div>
-        <p class="text-center pt-2">Salle à manger</p>
+        <p class="text-center pt-2">
+            {$t("home.salle_a_manger")}
+        </p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
@@ -62,13 +66,17 @@
                 alt="Cuisine"
             />
         </div>
-        <p class="text-center pt-2">Cuisine</p>
+        <p class="text-center pt-2">
+            {$t("home.cuisine")}
+        </p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
             <img src="{base}/images/salon3.jpg" width="100%" alt="Intérieur" />
         </div>
-        <p class="text-center pt-2">Intérieur</p>
+        <p class="text-center pt-2">
+            {$t("home.interieur")}
+        </p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="img-hover-zoom">
@@ -78,7 +86,9 @@
                 alt="Immeuble"
             />
         </div>
-        <p class="text-center pt-2">Immeuble</p>
+        <p class="text-center pt-2">
+            {$t("home.immeuble")}
+        </p>
     </div>
     <div class="col-4 col-sm-12 col-xs-12 border-0 pa-5">
         <div class="text-center">
@@ -98,13 +108,17 @@
                 />
             </button>
         </div>
-        <p class="text-center pt-1">Plan (cliquez pour agrandir)</p>
+        <p class="text-center pt-1">
+            {$t("home.plan")}
+        </p>
     </div>
 </div>
 
 <div class="row align-center my-5 border-0">
     <div class="col-4 col-sm-12">
-        <h2 class="text-center">Info & Contact:</h2>
+        <h2 class="text-center">
+            {$t("home.info_and_contact")}
+        </h2>
         <br /><br />
         <div class="text-center" style="font-size: 1.4em;">
             <a
@@ -131,7 +145,7 @@
             />
         </button>
         <p class="text-center pt-1">
-            Domaine des 4 Vallées (cliquez pour agrandir)
+            {$t("home.domain")}
         </p>
     </div>
 </div>

@@ -5,30 +5,12 @@ export const defaultLocale = 'fr';
 
 /** @type {import('sveltekit-i18n').Config} */
 export const config = {
-    fallbackLocale: 'en',
+    fallbackLocale: 'fr',
     translations: {
-        en: { lang },
         fr: { lang },
         de: { lang },
     },
     loaders: [
-        {
-            locale: 'en',
-            key: 'common',
-            loader: async () => (await import('./en/common.json')).default,
-        },
-        {
-            locale: 'en',
-            key: 'home',
-            loader: async () => (await import('./en/home.json')).default,
-        },
-        {
-            locale: 'en',
-            key: 'about',
-            // routes: ['/en/about'],
-            routes: ['/about'],
-            loader: async () => (await import('./en/about.json')).default,
-        },
         {
             locale: 'fr',
             key: 'common',
@@ -42,9 +24,14 @@ export const config = {
         {
             locale: 'fr',
             key: 'about',
-            // routes: ['/fr/about'],
             routes: ['/about'],
             loader: async () => (await import('./fr/about.json')).default,
+        },
+        {
+            locale: 'fr',
+            key: 'price',
+            routes: ['/tarifs'],
+            loader: async () => (await import('./fr/price.json')).default,
         },
         {
             locale: 'de',
@@ -59,9 +46,14 @@ export const config = {
         {
             locale: 'de',
             key: 'about',
-            // routes: ['/fr/about'],
             routes: ['/about'],
             loader: async () => (await import('./de/about.json')).default,
+        },
+        {
+            locale: 'de',
+            key: 'price',
+            routes: ['/tarifs'],
+            loader: async () => (await import('./de/price.json')).default,
         },
     ],
 };
